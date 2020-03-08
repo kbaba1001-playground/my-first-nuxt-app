@@ -4,30 +4,39 @@
       <h1>Get the latest tech news!</h1>
     </section>
     <section class="featured-posts">
-      <nuxt-link :to="'/posts/' + 1">
-        <article class="poost-preview">
-          <div class="post-thumbnail"></div>
-          <div class="post-content">
-            <h1>Post Title</h1>
-            <p>Preview Text</p>
-          </div>
-        </article>
-      </nuxt-link>
-      <nuxt-link :to="'/posts/' + 2">
-        <article class="poost-preview">
-          <div class="post-thumbnail"></div>
-          <div class="post-content">
-            <h1>Post Title 2</h1>
-            <p>Preview Text 2</p>
-          </div>
-        </article>
-      </nuxt-link>
+      <PostPreview
+        id="1"
+        thumbnail="https://www.pakutaso.com/shared/img/thumb/cafe201261762_TP_V.jpg"
+        title="Hello there!"
+        previewText="This my first post!"
+      />
+      <PostPreview
+        id="2"
+        thumbnail="https://www.pakutaso.com/shared/img/thumb/cafe201261762_TP_V.jpg"
+        title="Hello there - second post"
+        previewText="This my first post!"
+      />
+      <PostPreview
+        id="3"
+        thumbnail="https://www.pakutaso.com/shared/img/thumb/cafe201261762_TP_V.jpg"
+        title="Hello there - third post"
+        previewText="This my first post!"
+      />
     </section>
   </div>
 
 </template>
 
-<script></script>
+<script>
+import PostPreview from '@/components/Posts/PostPreview'
+
+export default {
+  components: {
+    PostPreview
+  }
+}
+
+</script>
 
 <style scoped>
 .post-preview {
