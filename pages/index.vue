@@ -39,6 +39,12 @@ export default {
 </script>
 
 <style scoped>
+.intro {
+  height: 300px;
+  background-image: url('~assets/images/cafe201261762_TP_V4.jpg');
+  color: white;
+}
+
 .post-preview {
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
