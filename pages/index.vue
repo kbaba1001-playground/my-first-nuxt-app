@@ -3,39 +3,18 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview
-        id="1"
-        thumbnail="https://www.pakutaso.com/shared/img/thumb/cafe201261762_TP_V.jpg"
-        title="Hello there!"
-        previewText="This my first post!"
-      />
-      <PostPreview
-        id="2"
-        thumbnail="https://www.pakutaso.com/shared/img/thumb/cafe201261762_TP_V.jpg"
-        title="Hello there - second post"
-        previewText="This my first post!"
-      />
-      <PostPreview
-        id="3"
-        thumbnail="https://www.pakutaso.com/shared/img/thumb/cafe201261762_TP_V.jpg"
-        title="Hello there - third post"
-        previewText="This my first post!"
-      />
-    </section>
+    <PostList />
   </div>
-
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview'
+import PostList from "@/components/Posts/PostList";
 
 export default {
   components: {
-    PostPreview
+    PostList
   }
-}
-
+};
 </script>
 
 <style scoped>
@@ -46,7 +25,7 @@ export default {
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
-  background-image: url('~assets/images/cafe201261762_TP_V4.jpg');
+  background-image: url("~assets/images/cafe201261762_TP_V4.jpg");
 }
 
 .intro h1 {
@@ -68,14 +47,5 @@ export default {
   .intro h1 {
     font-size: 2rem;
   }
-}
-
-.featured-posts {
-  display: flex;
-  padding: 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 </style>
